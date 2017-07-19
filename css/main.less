@@ -1,0 +1,86 @@
+// Variables
+
+@btn-base-color: #FB5350; // Base background button
+@btn-border: 2px; // Button border
+@font-family: "RobotoRegular", Arial, sans-serif; // Font-family
+
+body {
+    padding: 30px;
+}
+
+h1 {
+    font: 32px @font-family;
+}
+
+
+/* 
+* Button style
+*/
+
+.btn {
+    display: inline-block;
+    padding: 5px 20px;
+    border: none;
+    font-size: 16px;
+    font-family: @font-family;
+}
+
+.btn:focus {
+    outline: none;
+}
+
+/* Button flat */
+
+.btn-flat {
+    border: @btn-border solid @btn-base-color;
+    background-color: @btn-base-color;
+    color: #fff;
+}
+
+.btn-flat:hover {
+    border: @btn-border solid darken(@btn-base-color, 10%);
+    background-color: darken(@btn-base-color, 10%);
+}
+
+.btn-flat:active {
+    border: @btn-border solid darken(@btn-base-color, 20%);
+    background-color: darken(@btn-base-color, 20%);
+}
+
+/* Button border */
+
+.btn-border {
+    border: @btn-border solid @btn-base-color;
+    background-color: #fff;
+    color: @btn-base-color;
+}
+
+.btn-border:hover {
+    border: @btn-border solid darken(@btn-base-color, 10%);
+    color: darken(@btn-base-color, 10%);
+}
+
+.btn-border:active {
+    border: @btn-border solid darken(@btn-base-color, 20%);
+    color: darken(@btn-base-color, 20%);
+}
+
+/* Button border full */
+
+.btn-border-full {
+    border: @btn-border solid @btn-base-color;
+    background-color: #fff;
+    color: @btn-base-color;
+}
+
+.btn-border-full:hover {
+    border: @btn-border solid @btn-base-color;
+    background-color: @btn-base-color;
+    color: #fff;
+}
+
+.btn-border-full:active {
+    border: @btn-border solid darken(@btn-base-color, 20%);
+    background-color: darken(@btn-base-color, 20%);
+    color: #fff;
+}
